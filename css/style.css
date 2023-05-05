@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Mukta&display=swap');
+/* fonts used are Inter and Mukta */
+
+body{
+    max-width: 960px;
+    font-family:"Inter", "Mukta", "arial", "sans-serif";
+    margin: 0 auto;
+    background-color: rgb(192, 192, 192);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main main"
+    "footer footer ";
+}
+
+header{
+outline: 3px solid;
+outline-color:black;
+max-width: 960px;
+grid-area: header;
+align-content: start;
+justify-content: start;
+height: auto;
+text-align: center;
+background-color: rgb(173, 216, 230);
+}
+
+nav{
+     grid-area: nav;
+    background-color:rgb(173, 216, 230) ;
+    outline: 3px solid;
+    outline-color: black;
+    max-width: 960px;
+    text-align: center;
+    width: 100%;
+    top: 0px;
+    margin: 0 auto;
+    position: sticky;
+}
+
+nav ul{
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+main{
+    outline: 3px solid;
+    outline-color: black;
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "aboutme aboutme"
+    "education education"
+    "experience experience"
+    "skills awards"
+    "myreel  myreel";
+}
+
+section{
+    background-color: rgb(255, 255, 255);
+    max-width: 960px;
+    outline: 3px solid;
+    outline-color: black;
+    height: auto;
+    padding: 15px;
+}
+
+footer{
+    outline: 3px solid;
+    outline-color: black;
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+    grid-area: footer;
+    text-align: center;
+    background-color: rgb(173, 216, 230);
+}
+
+h2{
+    text-align: center;
+}
+
+img{
+    width: 50%; height: 50%;
+}
+
+div.box{
+    text-align: center;
+}
+
+div.column{
+    flex: 50%;
+    padding: 10px;
+}
+
+div.row{
+    display: flex;
+}
+
+#education{
+    grid-area: education;
+}
+
+#experience{
+    grid-area: experience;
+}
+
+#awards{
+    grid-area: awards;
+}
+
+#skills{
+    grid-area: skills;
+}
+
+#aboutme{
+    grid-area: aboutme;
+}
+
+#myreel{
+    grid-area: myreel;
+}
+
+a:link{
+    color:rgb(0,0,0);
+}
+
+a:visited{
+    color:rgb(0,0,255);
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+}
+
+a:active{
+    color:rgb(255,105,180);
+}
+
+a{
+    color: rgb(255, 255, 255);
+}
+
